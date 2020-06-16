@@ -17,7 +17,7 @@ import os
 
 python_library(
   name = 'config',
-  sources = rglobs('*.py'),
+  sources = ['**/*.py'],
   dependencies = [
     '3rdparty/python:pystachio',
     '3rdparty/python:twitter.common.lang',

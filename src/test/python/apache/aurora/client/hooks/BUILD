@@ -13,7 +13,7 @@
 #
 
 python_tests(name = 'hooks',
-  sources = globs('*.py'),
+  sources = ['*.py'],
   dependencies = [
     '3rdparty/python:mock',
     'src/main/python/apache/aurora/common',

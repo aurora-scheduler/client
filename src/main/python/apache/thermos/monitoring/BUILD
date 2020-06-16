@@ -17,7 +17,7 @@ import os
 
 python_library(
   name = 'monitoring',
-  sources = rglobs('*.py'),
+  sources = ['**/*.py'],
   dependencies = [
     '3rdparty/python:jmespath',
     '3rdparty/python:psutil',

@@ -17,7 +17,7 @@ import os
 
 python_library(
   name = '_executor',
-  sources = rglobs('*.py'),
+  sources = ['**/*.py'],
   dependencies = [
     '3rdparty/python:mesos.interface',
     '3rdparty/python:pex',

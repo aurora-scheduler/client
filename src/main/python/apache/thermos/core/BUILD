@@ -17,7 +17,7 @@ import os
 
 python_library(
   name = 'core',
-  sources = rglobs('*.py'),
+  sources = ['**/*.py'],
   dependencies = [
     '3rdparty/python:psutil',
     '3rdparty/python:twitter.common.dirutil',

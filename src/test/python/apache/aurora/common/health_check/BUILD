@@ -14,7 +14,7 @@
 
 python_tests(
   name = 'health_check',
-  sources = globs('*py'),
+  sources = ['*py'],
   dependencies = [
     '3rdparty/python:mock',
     '3rdparty/python:mox',

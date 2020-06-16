@@ -14,7 +14,7 @@
 
 python_tests(
   name = 'common',
-  sources = globs('*.py'),
+  sources = ['*.py'],
   dependencies = [
     '3rdparty/python:mock',
     '3rdparty/python:twitter.common.contextutil',

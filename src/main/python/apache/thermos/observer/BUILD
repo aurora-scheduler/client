@@ -17,12 +17,12 @@ import os
 
 resources(
   name = 'ui',
-  sources = zglobs('**/assets/*', '**/*.tpl'),
+  sources = ['**/assets/*', '**/*.tpl'],
 )
 
 python_library(
   name = 'observer',
-  sources = rglobs('*.py'),
+  sources = ['**/*.py'],
   dependencies = [
     '3rdparty/python:bottle',
     '3rdparty/python:mako',

@@ -14,7 +14,7 @@
 
 python_tests(
   name = 'docker',
-  sources = globs('*py'),
+  sources = ['*py'],
   dependencies = [
     '3rdparty/python:requests',
     '3rdparty/python:requests-mock',

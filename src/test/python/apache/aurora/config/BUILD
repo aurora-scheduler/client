@@ -14,7 +14,7 @@
 
 python_tests(
   name = 'config',
-  sources = globs('*py'),
+  sources = ['*py'],
   dependencies = [
     '3rdparty/python:mock',
     '3rdparty/python:requests-mock',
