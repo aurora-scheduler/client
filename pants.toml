@@ -19,7 +19,7 @@ plugins = [
 ]
 
 # allow imports in BUILD files to read .auroraversion
-build_file_imports = "allow"
+build_file_imports = "warn"
 
 
 [thrift]
@@ -68,7 +68,7 @@ pytest_plugins = [
 
 # We have some modules that have side-effects upon import, including starting a repl, so we can't
 # use python-eval to validate our BUILD deps currently.
-[lint.python-eval]
+[python-eval]
 skip = true
 
 
